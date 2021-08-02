@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/ll_operator_list_wrapper"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/space"
+        android:id="@+id/iv_recharge_provider_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginVertical="@dimen/space"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/logo"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:padding="@dimen/space"
+        android:textColor="#212121"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:id="@+id/tv_operator_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="BSNL"
+        android:layout_toRightOf="@+id/iv_recharge_provider_icon"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_below="@id/iv_recharge_provider_icon"
+        android:id="@+id/divider0"
+        android:background="#eeeeee"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_toRightOf="@+id/iv_recharge_provider_icon"
+        />
+
+</RelativeLayout>
